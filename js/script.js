@@ -27,4 +27,8 @@
 
 
 // DOCUMENT READY FUNCTION
+$(document).ready(function(){
+   // code must be inside this function!
+   var input = $("#input").val();
+});
 
