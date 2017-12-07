@@ -29,6 +29,39 @@
 // DOCUMENT READY FUNCTION
 $(document).ready(function(){
    // code must be inside this function!
-   var input = $("#input").val();
+   var input = $("#input1").val();
+   console.log(input);
 });
+
+var CC = Math.floor(Math.random()*3);
+
+var computer = [
+"rock",
+"paper",
+"scissor"
+];
+
+var HK = computer[CC]; 
+
+if(input === HK){
+       $("#h1").html("tie");
+}
+
+if((input === "rock" && HK === "scissor") ||
+   (input === "paper" && HK === "rock") ||
+   (input === "scissor" && HK === "paper")){
+       $("#h1").html("payer wins!")
+}
+
+if((input === "scissor" && HK === "rock") ||
+   (input === "rock" && HK === "paper") ||
+   (input === "paper" && HK === "scissor")){
+       $("#h1").html("computer wins")
+}
+
+
+           
+          
+
+
 
