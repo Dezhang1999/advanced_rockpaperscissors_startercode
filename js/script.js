@@ -44,20 +44,21 @@ var computer = [
 var HK = computer[CC]; 
 
 if(input === HK){
-       $("#h1").html("tie");
+       $("#h1").append("tie");
 }
 
 if((input === "rock" && HK === "scissor") ||
    (input === "paper" && HK === "rock") ||
    (input === "scissor" && HK === "paper")){
-       $("#h1").html("payer wins!")
+       $("#h1").append("payer wins!")
 }
 
 if((input === "scissor" && HK === "rock") ||
    (input === "rock" && HK === "paper") ||
    (input === "paper" && HK === "scissor")){
-       $("#h1").html("computer wins")
+       $("#h1").append("computer wins")
 }
+
 
 
            
